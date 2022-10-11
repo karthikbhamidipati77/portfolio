@@ -20,10 +20,10 @@
                             <li><a href="#Projects">Projects</a></li>
                             <li><a href="#certificates">Certificates</a></li>
                             <li><a href="#contacts">Contact</a></li>
-                            <i class="fa-solid fa-xmark" onclick="openmenu()"></i>
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                         </ul>
                        
-                        <i class="fa-solid fa-bars" onclick="closemenu()"></i>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                     </nav>
                     <div class="header-text">
                         <p>ECE Engineer</p>
@@ -227,13 +227,14 @@
     var sidemenu = document.getElementById("sidemenu");
     
     function openmenu(){
+        console.log("open");
         sidemenu.style.right="0";
     }
     function closemenu(){
+        console.log("close");
+
         sidemenu.style.right="-200px";
     }
-</script>
-<script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyyVWWEkWamdF0GgUvmytwuED9QQHOC26RgNRd2zV7HYzS8ZVkYoxiDWFS5cuQmM1x_Dw/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")

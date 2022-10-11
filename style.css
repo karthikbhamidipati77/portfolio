@@ -10,7 +10,6 @@ html{
 body{
     background: #080808;
     color: white;
-    background-image: ;
     background-size:  60%;
     background-position:  right;
     background-repeat: no-repeat;
@@ -18,11 +17,12 @@ body{
 }
 #header{
     width: 100%;
-    height: 100vh;
-    
+    height: 75vh;
 }
 .container{
     padding: 10px 10%;
+    margin: 0;
+
 }
 nav{
     display: flex;
@@ -317,19 +317,33 @@ nav .fa-solid{
    display: none;
 }
 @media only screen and (max-width: 600px){
-   #header{
-
-   }
+  
    .header-text{
-      margin-top: 100%;
+      margin-top: 30%;
       font-size: 16px;
    }
+   
+   .fa-xmark{
+      margin: 0 2rem;
+      background-color: #292526;
+      align-items: center;
+      text-align: center;
+      width: 2.5rem;
+      border-radius: 5rem;
+      /* justify-content: center; */
+   }
+.fa-xmark:hover{
+   background-color: #fff;
+   color: #000;
+}
+
    .header-text h1{
       font-size: 30px;
    }
    nav .fa-solid{
       display: block;
       font-size: 25px;
+      cursor: pointer;
    }
    nav ul{
       background: #ff004f;
@@ -359,6 +373,12 @@ nav .fa-solid{
    }
    .about-col-1{
       margin-bottom: 30px;
+      margin-top: -15rem;
+
+   }
+   .about-col-1 img{
+      margin:0;
+      width: 15rem;
    }
    .about-col-2{
       font-size: 14px;
